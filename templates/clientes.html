@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Clientes</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Correo Electrónico</th>
+            <th>Teléfono</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for cliente in clientes %}
+        <tr>
+            <td>{{ cliente.nombre }}</td>
+            <td>{{ cliente.email }}</td>
+            <td>{{ cliente.telefono }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="3" class="text-center">No hay clientes registrados.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+
+{% endblock %}

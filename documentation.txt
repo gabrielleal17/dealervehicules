@@ -1,0 +1,10 @@
+ARCHIVOS
+
+    -app.py : Controlador logico de las rutas
+    =models.py : Modelo de tablas en supabase
+    -requeriments : Librerias
+    -templates : Vistas en lenguaje html
+
+Para instalar las librerias del archivo requeriments debes realizar el siguiente paso
+    -Open Terminal
+    -execute this comand = pip install -r requeriments.txt
